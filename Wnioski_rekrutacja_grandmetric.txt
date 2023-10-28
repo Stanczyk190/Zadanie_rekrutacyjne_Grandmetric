@@ -1,0 +1,13 @@
+Z utworzonego pliku excel możemy zauważyć, że:
+- Mamy problem z pokojami których numer powtarza się w naszym arkuszu (a mamy do niego przypisane 2 lub więcej uuid)
+- Nie mamy poprawnie zarejestrowanych wszystkich kodów QR (uuid), co będzie wymagało uzupełnienia (najwięcej na pierwszym piętrze)
+- Istnieje kilka raportów (34) bez podanego numeru pokoju, co wymaga weryfikacjii czy są to pokoje zgubione, czy też raporty uzupełniające do innego pokoju
+- W żadnym pokoju nie występował problem z ogrzewaniem (issue_heating)
+- W 17 pokojach zarejestrowano problem z wykrywaniem ruchu przez system Souly
+- W 13 pokojach czujnik temperatury nie działa poprawnie
+- W 12 pokojach jest problem z kontaktronem umieszczonym na drzwiach, z czego w 7 pokojach w ogóle go brakuje
+- Aż w 63 pokojach jest w problem z działaniem, bądz sprawdzeniem wykrywania stanu okna 
+- W 10 pokojach zanotowano problem ze zmianą stanu ogrzewania 
+- W 13 pokojach nie udało się sprawdzić zmiany stanu kuchenki, natomiast w 10 pokojach zmiana ta nie działała poprawnie
+- W 4 pokojach pomylono ssid
+- W zakładce problem_description znajduje się jeszcze kilkadziesiąt raportów związanych z bieżącymi naprawami, bądź nierozwiązanymi problemami, jednakże należałoby je rozpatrywać idywidualnie gdyż jest ich zbyt wiele.
