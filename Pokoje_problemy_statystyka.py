@@ -19,16 +19,14 @@ problem_description = df['problem_description']
 solution = df['solution']
 short_uuid = df['short_uuid']
 
-# Wybierz interesujące kolumny
+
 kolumny_problemy = ['issue_heating', 'issue_motion', 'issue_temperature_sensor', 'issue_door',
                     'issue_window', 'issue_heating_switch', 'issue_kitchen_switch', 'issue_wifi', 'problem_description']
 
-# Inicjalizuj słownik do zliczania ilości problemów
+
 licznik_ilosci_problemow = {}
 
-# Iteruj przez każdą kolumnę problemów
 for kolumna in kolumny_problemy:
-    # Zlicz ilość wiadomości w danej kolumnie
     ilosc_wiadomosci = df[kolumna].count()
     licznik_ilosci_problemow[kolumna] = ilosc_wiadomosci
 

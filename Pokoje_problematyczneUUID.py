@@ -27,7 +27,7 @@ def compare_uuid(room_number, short_uuid, qr, problematic_rooms):
         else:
             return s
 
-    # Porównaj short_uuid i qr, ignorując znaki specjalne
+    # Porównanie short_uuid i qr
     short_uuid_clean = remove_special_chars(short_uuid)
     qr_clean = remove_special_chars(qr)
 
@@ -35,10 +35,10 @@ def compare_uuid(room_number, short_uuid, qr, problematic_rooms):
         print(f"W pokoju {room_number} nie zgadza się UUID.")
         problematic_rooms.append(room_number)
 
-# Utwórz listę do przechowywania informacji o pokojach z problemem UUID
+# Lista do przechowywania informacji o pokojach z problemem UUID
 pokoje_z_problemem = []
 
-# Użyj funkcji w pętli for do sprawdzenia dla każdego wiersza w danych
+
 for i in range(len(df)):
     compare_uuid(room_number[i], short_uuid[i], qr[i], pokoje_z_problemem)
 

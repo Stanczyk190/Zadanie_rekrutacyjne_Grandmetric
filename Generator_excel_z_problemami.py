@@ -5,7 +5,7 @@ nazwa_pliku_wyjsciowego = 'pokoje_z_problemem.xlsx'
 
 df = pd.read_excel(nazwa_pliku_wejsciowego)
 
-# Wybierz interesujące kolumny
+
 kolumny_problemy = ['issue_heating', 'issue_motion', 'issue_temperature_sensor', 'issue_door',
                     'issue_window', 'issue_heating_switch', 'issue_kitchen_switch', 'issue_wifi', 'problem_description']
 
